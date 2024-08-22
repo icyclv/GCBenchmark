@@ -1,0 +1,2574 @@
+[
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3424780.590852388,
+            "scoreError" : 109037.07601072808,
+            "scoreConfidence" : [
+                3315743.51484166,
+                3533817.6668631164
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3391323.6015001056,
+                "50.0" : 3416308.451017163,
+                "90.0" : 3466985.8037575553,
+                "95.0" : 3466985.8037575553,
+                "99.0" : 3466985.8037575553,
+                "99.9" : 3466985.8037575553,
+                "99.99" : 3466985.8037575553,
+                "99.999" : 3466985.8037575553,
+                "99.9999" : 3466985.8037575553,
+                "100.0" : 3466985.8037575553
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3466985.8037575553,
+                    3435478.829556418,
+                    3413806.268430699,
+                    3391323.6015001056,
+                    3416308.451017163
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3011315.397725503,
+            "scoreError" : 38356.14756464959,
+            "scoreConfidence" : [
+                2972959.2501608534,
+                3049671.5452901525
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2997651.838219786,
+                "50.0" : 3014526.500884514,
+                "90.0" : 3021477.4111080775,
+                "95.0" : 3021477.4111080775,
+                "99.0" : 3021477.4111080775,
+                "99.9" : 3021477.4111080775,
+                "99.99" : 3021477.4111080775,
+                "99.999" : 3021477.4111080775,
+                "99.9999" : 3021477.4111080775,
+                "100.0" : 3021477.4111080775
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3021477.4111080775,
+                    3014526.500884514,
+                    3018409.39371939,
+                    3004511.8446957464,
+                    2997651.838219786
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2570932.2839684687,
+            "scoreError" : 92560.82721709038,
+            "scoreConfidence" : [
+                2478371.4567513783,
+                2663493.111185559
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2540276.268691302,
+                "50.0" : 2585650.4208672377,
+                "90.0" : 2591224.482494818,
+                "95.0" : 2591224.482494818,
+                "99.0" : 2591224.482494818,
+                "99.9" : 2591224.482494818,
+                "99.99" : 2591224.482494818,
+                "99.999" : 2591224.482494818,
+                "99.9999" : 2591224.482494818,
+                "100.0" : 2591224.482494818
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2587906.9652722073,
+                    2591224.482494818,
+                    2585650.4208672377,
+                    2549603.2825167784,
+                    2540276.268691302
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2443563.160178047,
+            "scoreError" : 37827.35456095259,
+            "scoreConfidence" : [
+                2405735.8056170945,
+                2481390.514739
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2429604.098467849,
+                "50.0" : 2446620.886353186,
+                "90.0" : 2455010.8349626814,
+                "95.0" : 2455010.8349626814,
+                "99.0" : 2455010.8349626814,
+                "99.9" : 2455010.8349626814,
+                "99.99" : 2455010.8349626814,
+                "99.999" : 2455010.8349626814,
+                "99.9999" : 2455010.8349626814,
+                "100.0" : 2455010.8349626814
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2438259.4677278907,
+                    2446620.886353186,
+                    2455010.8349626814,
+                    2448320.513378627,
+                    2429604.098467849
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2474399.0387589084,
+            "scoreError" : 22113.903471550148,
+            "scoreConfidence" : [
+                2452285.1352873584,
+                2496512.9422304584
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2467236.2159476313,
+                "50.0" : 2473743.3306932193,
+                "90.0" : 2482835.8312978214,
+                "95.0" : 2482835.8312978214,
+                "99.0" : 2482835.8312978214,
+                "99.9" : 2482835.8312978214,
+                "99.99" : 2482835.8312978214,
+                "99.999" : 2482835.8312978214,
+                "99.9999" : 2482835.8312978214,
+                "100.0" : 2482835.8312978214
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2467236.2159476313,
+                    2473743.3306932193,
+                    2471990.204552008,
+                    2476189.6113038594,
+                    2482835.8312978214
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2141520.8975617806,
+            "scoreError" : 89935.7153287454,
+            "scoreConfidence" : [
+                2051585.1822330353,
+                2231456.612890526
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2100730.1929271813,
+                "50.0" : 2148363.1747764926,
+                "90.0" : 2158665.452143326,
+                "95.0" : 2158665.452143326,
+                "99.0" : 2158665.452143326,
+                "99.9" : 2158665.452143326,
+                "99.99" : 2158665.452143326,
+                "99.999" : 2158665.452143326,
+                "99.9999" : 2158665.452143326,
+                "100.0" : 2158665.452143326
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2100730.1929271813,
+                    2145668.6916565737,
+                    2154176.97630533,
+                    2148363.1747764926,
+                    2158665.452143326
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.G1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-Xlog:gc*:file=gc_log_G1_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.8",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1801421.2466451582,
+            "scoreError" : 63156.36618214457,
+            "scoreConfidence" : [
+                1738264.8804630137,
+                1864577.6128273027
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1784932.1826653893,
+                "50.0" : 1797860.3326182354,
+                "90.0" : 1823395.313078007,
+                "95.0" : 1823395.313078007,
+                "99.0" : 1823395.313078007,
+                "99.9" : 1823395.313078007,
+                "99.99" : 1823395.313078007,
+                "99.999" : 1823395.313078007,
+                "99.9999" : 1823395.313078007,
+                "100.0" : 1823395.313078007
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1797860.3326182354,
+                    1788074.5782821157,
+                    1784932.1826653893,
+                    1812843.826582043,
+                    1823395.313078007
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3481098.937037588,
+            "scoreError" : 144474.39666693835,
+            "scoreConfidence" : [
+                3336624.5403706497,
+                3625573.3337045265
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3447249.1903977576,
+                "50.0" : 3467100.8200371373,
+                "90.0" : 3542574.343070827,
+                "95.0" : 3542574.343070827,
+                "99.0" : 3542574.343070827,
+                "99.9" : 3542574.343070827,
+                "99.99" : 3542574.343070827,
+                "99.999" : 3542574.343070827,
+                "99.9999" : 3542574.343070827,
+                "100.0" : 3542574.343070827
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3447249.1903977576,
+                    3467100.8200371373,
+                    3459845.1000080896,
+                    3542574.343070827,
+                    3488725.231674128
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3025296.718644168,
+            "scoreError" : 41202.73219577958,
+            "scoreConfidence" : [
+                2984093.9864483885,
+                3066499.450839948
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3007323.064568405,
+                "50.0" : 3027830.9375759754,
+                "90.0" : 3036145.310824108,
+                "95.0" : 3036145.310824108,
+                "99.0" : 3036145.310824108,
+                "99.9" : 3036145.310824108,
+                "99.99" : 3036145.310824108,
+                "99.999" : 3036145.310824108,
+                "99.9999" : 3036145.310824108,
+                "100.0" : 3036145.310824108
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3036145.310824108,
+                    3027962.506957507,
+                    3027830.9375759754,
+                    3027221.773294845,
+                    3007323.064568405
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2779329.5114816516,
+            "scoreError" : 82619.05158542977,
+            "scoreConfidence" : [
+                2696710.4598962218,
+                2861948.5630670814
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2751901.6640219986,
+                "50.0" : 2791069.70281548,
+                "90.0" : 2800992.7038116716,
+                "95.0" : 2800992.7038116716,
+                "99.0" : 2800992.7038116716,
+                "99.9" : 2800992.7038116716,
+                "99.99" : 2800992.7038116716,
+                "99.999" : 2800992.7038116716,
+                "99.9999" : 2800992.7038116716,
+                "100.0" : 2800992.7038116716
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2751901.6640219986,
+                    2761107.617761728,
+                    2800992.7038116716,
+                    2791069.70281548,
+                    2791575.8689973806
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2566196.609865566,
+            "scoreError" : 83594.60678747352,
+            "scoreConfidence" : [
+                2482602.0030780924,
+                2649791.216653039
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2545330.911266516,
+                "50.0" : 2558815.2215856863,
+                "90.0" : 2602756.0486369184,
+                "95.0" : 2602756.0486369184,
+                "99.0" : 2602756.0486369184,
+                "99.9" : 2602756.0486369184,
+                "99.99" : 2602756.0486369184,
+                "99.999" : 2602756.0486369184,
+                "99.9999" : 2602756.0486369184,
+                "100.0" : 2602756.0486369184
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2602756.0486369184,
+                    2565516.3792036446,
+                    2558815.2215856863,
+                    2558564.4886350636,
+                    2545330.911266516
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2343228.0049419766,
+            "scoreError" : 9395.272153040927,
+            "scoreConfidence" : [
+                2333832.732788936,
+                2352623.2770950175
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2340079.7901627687,
+                "50.0" : 2343712.6890218616,
+                "90.0" : 2345883.667901138,
+                "95.0" : 2345883.667901138,
+                "99.0" : 2345883.667901138,
+                "99.9" : 2345883.667901138,
+                "99.99" : 2345883.667901138,
+                "99.999" : 2345883.667901138,
+                "99.9999" : 2345883.667901138,
+                "100.0" : 2345883.667901138
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2345883.667901138,
+                    2343712.6890218616,
+                    2340079.7901627687,
+                    2345050.4729039604,
+                    2341413.4047201565
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2120691.4884137986,
+            "scoreError" : 22344.75730912482,
+            "scoreConfidence" : [
+                2098346.731104674,
+                2143036.2457229234
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2111162.234598846,
+                "50.0" : 2121795.240592968,
+                "90.0" : 2126960.648872074,
+                "95.0" : 2126960.648872074,
+                "99.0" : 2126960.648872074,
+                "99.9" : 2126960.648872074,
+                "99.99" : 2126960.648872074,
+                "99.999" : 2126960.648872074,
+                "99.9999" : 2126960.648872074,
+                "100.0" : 2126960.648872074
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2121048.3304328173,
+                    2111162.234598846,
+                    2122490.987572287,
+                    2126960.648872074,
+                    2121795.240592968
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.MixedGCCountTargetLowG1GC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseG1GC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:G1MixedGCCountTarget=4",
+            "-Xlog:gc*:file=gc_log_MixedGCCountTargetLowG1GC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.8",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1860281.4089308798,
+            "scoreError" : 27580.071532708396,
+            "scoreConfidence" : [
+                1832701.3373981714,
+                1887861.4804635881
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1849077.5691042214,
+                "50.0" : 1861304.0979061243,
+                "90.0" : 1866974.2665493267,
+                "95.0" : 1866974.2665493267,
+                "99.0" : 1866974.2665493267,
+                "99.9" : 1866974.2665493267,
+                "99.99" : 1866974.2665493267,
+                "99.999" : 1866974.2665493267,
+                "99.9999" : 1866974.2665493267,
+                "100.0" : 1866974.2665493267
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1861304.0979061243,
+                    1865750.6597842574,
+                    1866974.2665493267,
+                    1858300.4513104686,
+                    1849077.5691042214
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 5196109.880128544,
+            "scoreError" : 39147.39329147046,
+            "scoreConfidence" : [
+                5156962.486837073,
+                5235257.273420014
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5181253.689143177,
+                "50.0" : 5196513.004377139,
+                "90.0" : 5205577.272583687,
+                "95.0" : 5205577.272583687,
+                "99.0" : 5205577.272583687,
+                "99.9" : 5205577.272583687,
+                "99.99" : 5205577.272583687,
+                "99.999" : 5205577.272583687,
+                "99.9999" : 5205577.272583687,
+                "100.0" : 5205577.272583687
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5181253.689143177,
+                    5196513.004377139,
+                    5205329.46281541,
+                    5191875.971723307,
+                    5205577.272583687
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4608515.986074245,
+            "scoreError" : 62511.643981881374,
+            "scoreConfidence" : [
+                4546004.342092363,
+                4671027.630056126
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4596472.381674875,
+                "50.0" : 4603795.209425002,
+                "90.0" : 4637058.275866727,
+                "95.0" : 4637058.275866727,
+                "99.0" : 4637058.275866727,
+                "99.9" : 4637058.275866727,
+                "99.99" : 4637058.275866727,
+                "99.999" : 4637058.275866727,
+                "99.9999" : 4637058.275866727,
+                "100.0" : 4637058.275866727
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4637058.275866727,
+                    4603815.477557616,
+                    4603795.209425002,
+                    4601438.585847004,
+                    4596472.381674875
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4216751.678156426,
+            "scoreError" : 24717.94633409826,
+            "scoreConfidence" : [
+                4192033.7318223277,
+                4241469.624490525
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4206063.554665506,
+                "50.0" : 4218891.160699842,
+                "90.0" : 4222107.137089129,
+                "95.0" : 4222107.137089129,
+                "99.0" : 4222107.137089129,
+                "99.9" : 4222107.137089129,
+                "99.99" : 4222107.137089129,
+                "99.999" : 4222107.137089129,
+                "99.9999" : 4222107.137089129,
+                "100.0" : 4222107.137089129
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4222107.137089129,
+                    4206063.554665506,
+                    4220821.179382284,
+                    4215875.358945371,
+                    4218891.160699842
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4691760.292215252,
+            "scoreError" : 36152.149725090974,
+            "scoreConfidence" : [
+                4655608.142490162,
+                4727912.441940343
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4676938.759473405,
+                "50.0" : 4693935.510225961,
+                "90.0" : 4701693.801030799,
+                "95.0" : 4701693.801030799,
+                "99.0" : 4701693.801030799,
+                "99.9" : 4701693.801030799,
+                "99.99" : 4701693.801030799,
+                "99.999" : 4701693.801030799,
+                "99.9999" : 4701693.801030799,
+                "100.0" : 4701693.801030799
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4701693.801030799,
+                    4676938.759473405,
+                    4689523.683628307,
+                    4693935.510225961,
+                    4696709.706717794
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3780053.3192261136,
+            "scoreError" : 15117.88696320117,
+            "scoreConfidence" : [
+                3764935.4322629124,
+                3795171.206189315
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3776847.007681292,
+                "50.0" : 3778494.026555486,
+                "90.0" : 3786456.534289487,
+                "95.0" : 3786456.534289487,
+                "99.0" : 3786456.534289487,
+                "99.9" : 3786456.534289487,
+                "99.99" : 3786456.534289487,
+                "99.999" : 3786456.534289487,
+                "99.9999" : 3786456.534289487,
+                "100.0" : 3786456.534289487
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3778494.026555486,
+                    3781051.398581258,
+                    3777417.629023046,
+                    3776847.007681292,
+                    3786456.534289487
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3595971.8748038537,
+            "scoreError" : 43582.76627753173,
+            "scoreConfidence" : [
+                3552389.108526322,
+                3639554.6410813853
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3578258.2267054617,
+                "50.0" : 3596611.647312522,
+                "90.0" : 3609763.46358089,
+                "95.0" : 3609763.46358089,
+                "99.0" : 3609763.46358089,
+                "99.9" : 3609763.46358089,
+                "99.99" : 3609763.46358089,
+                "99.999" : 3609763.46358089,
+                "99.9999" : 3609763.46358089,
+                "100.0" : 3609763.46358089
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3598761.7001941786,
+                    3596611.647312522,
+                    3609763.46358089,
+                    3596464.336226218,
+                    3578258.2267054617
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ParallelGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseParallelGC",
+            "-Xlog:gc*:file=gc_log_ParallelGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.8",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3059946.433322642,
+            "scoreError" : 30428.15607410869,
+            "scoreConfidence" : [
+                3029518.2772485334,
+                3090374.5893967506
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3050765.1259271707,
+                "50.0" : 3061988.3840195816,
+                "90.0" : 3070816.9643337256,
+                "95.0" : 3070816.9643337256,
+                "99.0" : 3070816.9643337256,
+                "99.9" : 3070816.9643337256,
+                "99.99" : 3070816.9643337256,
+                "99.999" : 3070816.9643337256,
+                "99.9999" : 3070816.9643337256,
+                "100.0" : 3070816.9643337256
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3050765.1259271707,
+                    3062333.916229331,
+                    3070816.9643337256,
+                    3061988.3840195816,
+                    3053827.776103401
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4692417.461579278,
+            "scoreError" : 63076.245054373045,
+            "scoreConfidence" : [
+                4629341.2165249055,
+                4755493.706633651
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4670522.050980999,
+                "50.0" : 4691884.401361421,
+                "90.0" : 4716509.002158804,
+                "95.0" : 4716509.002158804,
+                "99.0" : 4716509.002158804,
+                "99.9" : 4716509.002158804,
+                "99.99" : 4716509.002158804,
+                "99.999" : 4716509.002158804,
+                "99.9999" : 4716509.002158804,
+                "100.0" : 4716509.002158804
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4716509.002158804,
+                    4670522.050980999,
+                    4689153.745229698,
+                    4694018.108165467,
+                    4691884.401361421
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3505052.9340743246,
+            "scoreError" : 67992.5354333995,
+            "scoreConfidence" : [
+                3437060.398640925,
+                3573045.469507724
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3486375.846170328,
+                "50.0" : 3507843.6284771627,
+                "90.0" : 3527698.8413325725,
+                "95.0" : 3527698.8413325725,
+                "99.0" : 3527698.8413325725,
+                "99.9" : 3527698.8413325725,
+                "99.99" : 3527698.8413325725,
+                "99.999" : 3527698.8413325725,
+                "99.9999" : 3527698.8413325725,
+                "100.0" : 3527698.8413325725
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3507843.6284771627,
+                    3527698.8413325725,
+                    3488353.317691181,
+                    3514993.036700379,
+                    3486375.846170328
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2987365.599979005,
+            "scoreError" : 28395.533437084814,
+            "scoreConfidence" : [
+                2958970.06654192,
+                3015761.1334160897
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2979290.44401155,
+                "50.0" : 2990583.201203063,
+                "90.0" : 2995788.7914197687,
+                "95.0" : 2995788.7914197687,
+                "99.0" : 2995788.7914197687,
+                "99.9" : 2995788.7914197687,
+                "99.99" : 2995788.7914197687,
+                "99.999" : 2995788.7914197687,
+                "99.9999" : 2995788.7914197687,
+                "100.0" : 2995788.7914197687
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2991268.2422969784,
+                    2995788.7914197687,
+                    2979897.320963665,
+                    2990583.201203063,
+                    2979290.44401155
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2644254.1993892165,
+            "scoreError" : 68571.27532819401,
+            "scoreConfidence" : [
+                2575682.9240610227,
+                2712825.4747174103
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2625783.8851236124,
+                "50.0" : 2642663.688653192,
+                "90.0" : 2673566.071295493,
+                "95.0" : 2673566.071295493,
+                "99.0" : 2673566.071295493,
+                "99.9" : 2673566.071295493,
+                "99.99" : 2673566.071295493,
+                "99.999" : 2673566.071295493,
+                "99.9999" : 2673566.071295493,
+                "100.0" : 2673566.071295493
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2642663.688653192,
+                    2673566.071295493,
+                    2625783.8851236124,
+                    2636252.008833281,
+                    2643005.3430405045
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1780952.1870851356,
+            "scoreError" : 38536.2592319838,
+            "scoreConfidence" : [
+                1742415.9278531517,
+                1819488.4463171195
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1770048.0221452462,
+                "50.0" : 1786760.9884507367,
+                "90.0" : 1790344.2327905274,
+                "95.0" : 1790344.2327905274,
+                "99.0" : 1790344.2327905274,
+                "99.9" : 1790344.2327905274,
+                "99.99" : 1790344.2327905274,
+                "99.999" : 1790344.2327905274,
+                "99.9999" : 1790344.2327905274,
+                "100.0" : 1790344.2327905274
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1790344.2327905274,
+                    1770048.0221452462,
+                    1787479.545529671,
+                    1770128.1465094972,
+                    1786760.9884507367
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1945282.7837679058,
+            "scoreError" : 5794.648594541213,
+            "scoreConfidence" : [
+                1939488.1351733645,
+                1951077.432362447
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1943106.3581725738,
+                "50.0" : 1945342.634883047,
+                "90.0" : 1946963.934821303,
+                "95.0" : 1946963.934821303,
+                "99.0" : 1946963.934821303,
+                "99.9" : 1946963.934821303,
+                "99.99" : 1946963.934821303,
+                "99.999" : 1946963.934821303,
+                "99.9999" : 1946963.934821303,
+                "100.0" : 1946963.934821303
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1946336.2107582917,
+                    1945342.634883047,
+                    1943106.3581725738,
+                    1944664.7802043124,
+                    1946963.934821303
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.SerialGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseSerialGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_SerialGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.8",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1322445.549620608,
+            "scoreError" : 41856.65765482342,
+            "scoreConfidence" : [
+                1280588.8919657846,
+                1364302.2072754316
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1306277.9996799987,
+                "50.0" : 1320473.418329417,
+                "90.0" : 1332943.87962822,
+                "95.0" : 1332943.87962822,
+                "99.0" : 1332943.87962822,
+                "99.9" : 1332943.87962822,
+                "99.99" : 1332943.87962822,
+                "99.999" : 1332943.87962822,
+                "99.9999" : 1332943.87962822,
+                "100.0" : 1332943.87962822
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1320437.7545304769,
+                    1320473.418329417,
+                    1332943.87962822,
+                    1306277.9996799987,
+                    1332094.695934927
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 5000646.110685535,
+            "scoreError" : 136930.7017143245,
+            "scoreConfidence" : [
+                4863715.40897121,
+                5137576.81239986
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4955879.710919843,
+                "50.0" : 5006257.591218898,
+                "90.0" : 5042976.571581021,
+                "95.0" : 5042976.571581021,
+                "99.0" : 5042976.571581021,
+                "99.9" : 5042976.571581021,
+                "99.99" : 5042976.571581021,
+                "99.999" : 5042976.571581021,
+                "99.9999" : 5042976.571581021,
+                "100.0" : 5042976.571581021
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5006257.591218898,
+                    4974301.942341938,
+                    5042976.571581021,
+                    5023814.737365977,
+                    4955879.710919843
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4353179.198761257,
+            "scoreError" : 12780.610778163962,
+            "scoreConfidence" : [
+                4340398.587983093,
+                4365959.809539421
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4349373.433866758,
+                "50.0" : 4355127.771330622,
+                "90.0" : 4355909.270582802,
+                "95.0" : 4355909.270582802,
+                "99.0" : 4355909.270582802,
+                "99.9" : 4355909.270582802,
+                "99.99" : 4355909.270582802,
+                "99.999" : 4355909.270582802,
+                "99.9999" : 4355909.270582802,
+                "100.0" : 4355909.270582802
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4355127.771330622,
+                    4349373.433866758,
+                    4355738.609669464,
+                    4355909.270582802,
+                    4349746.908356643
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3988500.701897147,
+            "scoreError" : 58033.68156835707,
+            "scoreConfidence" : [
+                3930467.02032879,
+                4046534.3834655043
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3962964.6812367323,
+                "50.0" : 3995564.5055427556,
+                "90.0" : 4000286.170891688,
+                "95.0" : 4000286.170891688,
+                "99.0" : 4000286.170891688,
+                "99.9" : 4000286.170891688,
+                "99.99" : 4000286.170891688,
+                "99.999" : 4000286.170891688,
+                "99.9999" : 4000286.170891688,
+                "100.0" : 4000286.170891688
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3996604.356447241,
+                    3987083.7953673205,
+                    4000286.170891688,
+                    3995564.5055427556,
+                    3962964.6812367323
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3451432.8118031593,
+            "scoreError" : 108632.95183247111,
+            "scoreConfidence" : [
+                3342799.8599706884,
+                3560065.7636356303
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3426746.316922966,
+                "50.0" : 3447706.4107014956,
+                "90.0" : 3497457.0878542135,
+                "95.0" : 3497457.0878542135,
+                "99.0" : 3497457.0878542135,
+                "99.9" : 3497457.0878542135,
+                "99.99" : 3497457.0878542135,
+                "99.999" : 3497457.0878542135,
+                "99.9999" : 3497457.0878542135,
+                "100.0" : 3497457.0878542135
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3426746.316922966,
+                    3447706.4107014956,
+                    3497457.0878542135,
+                    3430648.7783116894,
+                    3454605.465225432
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2644976.003338376,
+            "scoreError" : 63581.90755113014,
+            "scoreConfidence" : [
+                2581394.095787246,
+                2708557.9108895063
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2617865.2779887007,
+                "50.0" : 2647863.7426537033,
+                "90.0" : 2662337.5197903714,
+                "95.0" : 2662337.5197903714,
+                "99.0" : 2662337.5197903714,
+                "99.9" : 2662337.5197903714,
+                "99.99" : 2662337.5197903714,
+                "99.999" : 2662337.5197903714,
+                "99.9999" : 2662337.5197903714,
+                "100.0" : 2662337.5197903714
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2617865.2779887007,
+                    2647863.7426537033,
+                    2645067.9849412614,
+                    2662337.5197903714,
+                    2651745.4913178436
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 1894338.0933063994,
+            "scoreError" : 63991.76421597815,
+            "scoreConfidence" : [
+                1830346.3290904213,
+                1958329.8575223775
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1881611.5046710514,
+                "50.0" : 1890574.988827683,
+                "90.0" : 1923001.984179143,
+                "95.0" : 1923001.984179143,
+                "99.0" : 1923001.984179143,
+                "99.9" : 1923001.984179143,
+                "99.99" : 1923001.984179143,
+                "99.999" : 1923001.984179143,
+                "99.9999" : 1923001.984179143,
+                "100.0" : 1923001.984179143
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1923001.984179143,
+                    1890574.988827683,
+                    1881611.5046710514,
+                    1884198.7493860633,
+                    1892303.2394680565
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ShenandoahGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseShenandoahGC",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-Xlog:gc*:file=gc_log_Shenandoah_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.8",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 877633.3617747311,
+            "scoreError" : 16068.906413157436,
+            "scoreConfidence" : [
+                861564.4553615736,
+                893702.2681878885
+            ],
+            "scorePercentiles" : {
+                "0.0" : 872238.9174300153,
+                "50.0" : 878123.7561260681,
+                "90.0" : 881716.4775874066,
+                "95.0" : 881716.4775874066,
+                "99.0" : 881716.4775874066,
+                "99.9" : 881716.4775874066,
+                "99.99" : 881716.4775874066,
+                "99.999" : 881716.4775874066,
+                "99.9999" : 881716.4775874066,
+                "100.0" : 881716.4775874066
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    874630.0431239301,
+                    878123.7561260681,
+                    881716.4775874066,
+                    872238.9174300153,
+                    881457.6146062353
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.2",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 5169527.073360604,
+            "scoreError" : 22296.77149816347,
+            "scoreConfidence" : [
+                5147230.301862441,
+                5191823.844858767
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5163758.236863354,
+                "50.0" : 5169667.484131698,
+                "90.0" : 5178566.443565048,
+                "95.0" : 5178566.443565048,
+                "99.0" : 5178566.443565048,
+                "99.9" : 5178566.443565048,
+                "99.99" : 5178566.443565048,
+                "99.999" : 5178566.443565048,
+                "99.9999" : 5178566.443565048,
+                "100.0" : 5178566.443565048
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5163758.236863354,
+                    5170399.224923704,
+                    5165243.977319215,
+                    5169667.484131698,
+                    5178566.443565048
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.3",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4400841.0723257605,
+            "scoreError" : 87001.98828668676,
+            "scoreConfidence" : [
+                4313839.084039073,
+                4487843.060612448
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4367148.3964080345,
+                "50.0" : 4402259.228804738,
+                "90.0" : 4422974.030648899,
+                "95.0" : 4422974.030648899,
+                "99.0" : 4422974.030648899,
+                "99.9" : 4422974.030648899,
+                "99.99" : 4422974.030648899,
+                "99.999" : 4422974.030648899,
+                "99.9999" : 4422974.030648899,
+                "100.0" : 4422974.030648899
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4367148.3964080345,
+                    4392430.762258108,
+                    4422974.030648899,
+                    4402259.228804738,
+                    4419392.943509022
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.4",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 4020473.3487102063,
+            "scoreError" : 33508.83436661811,
+            "scoreConfidence" : [
+                3986964.514343588,
+                4053982.1830768245
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4009951.7667207513,
+                "50.0" : 4022319.631988535,
+                "90.0" : 4030803.630571,
+                "95.0" : 4030803.630571,
+                "99.0" : 4030803.630571,
+                "99.9" : 4030803.630571,
+                "99.99" : 4030803.630571,
+                "99.999" : 4030803.630571,
+                "99.9999" : 4030803.630571,
+                "100.0" : 4030803.630571
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4030803.630571,
+                    4013293.2137166015,
+                    4025998.5005541425,
+                    4022319.631988535,
+                    4009951.7667207513
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.5",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 3246138.0282715997,
+            "scoreError" : 31610.04953470453,
+            "scoreConfidence" : [
+                3214527.978736895,
+                3277748.077806304
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3235821.2750602406,
+                "50.0" : 3246543.695663492,
+                "90.0" : 3256572.2659858153,
+                "95.0" : 3256572.2659858153,
+                "99.0" : 3256572.2659858153,
+                "99.9" : 3256572.2659858153,
+                "99.99" : 3256572.2659858153,
+                "99.999" : 3256572.2659858153,
+                "99.9999" : 3256572.2659858153,
+                "100.0" : 3256572.2659858153
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3235821.2750602406,
+                    3256572.2659858153,
+                    3240683.065343219,
+                    3251069.839305231,
+                    3246543.695663492
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.6",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2674056.5716989543,
+            "scoreError" : 17851.860176212027,
+            "scoreConfidence" : [
+                2656204.711522742,
+                2691908.4318751665
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2667043.6319321324,
+                "50.0" : 2674567.710033148,
+                "90.0" : 2679538.710227754,
+                "95.0" : 2679538.710227754,
+                "99.0" : 2679538.710227754,
+                "99.9" : 2679538.710227754,
+                "99.99" : 2679538.710227754,
+                "99.999" : 2679538.710227754,
+                "99.9999" : 2679538.710227754,
+                "100.0" : 2679538.710227754
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2667043.6319321324,
+                    2674567.710033148,
+                    2679538.710227754,
+                    2676292.141593632,
+                    2672840.6647081063
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "org.example.LRUBenckmark.ZGC",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/mnt/data/ycchang/software/java/TencentKona-17.0.11/bin/java",
+        "jvmArgs" : [
+            "-Xms4G",
+            "-Xmx4G",
+            "-XX:ActiveProcessorCount=12",
+            "-server",
+            "-XX:+UseZGC",
+            "-Xlog:gc*:file=gc_log_ZGC_%t_%p.log"
+        ],
+        "jdkVersion" : "17.0.11-internal",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "17.0.11-internal+0-adhoc.ycchang.TencentKona-17",
+        "warmupIterations" : 5,
+        "warmupTime" : "60 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "60 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "hitRate" : "0.9",
+            "liveDataFraction" : "0.7",
+            "objectSize" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 2323942.5637596105,
+            "scoreError" : 61645.68717402082,
+            "scoreConfidence" : [
+                2262296.8765855897,
+                2385588.2509336313
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2295734.077535655,
+                "50.0" : 2332073.4918560865,
+                "90.0" : 2333049.486599695,
+                "95.0" : 2333049.486599695,
+                "99.0" : 2333049.486599695,
+                "99.9" : 2333049.486599695,
+                "99.99" : 2333049.486599695,
+                "99.999" : 2333049.486599695,
+                "99.9999" : 2333049.486599695,
+                "100.0" : 2333049.486599695
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2295734.077535655,
+                    2326247.283580115,
+                    2332608.4792265007,
+                    2332073.4918560865,
+                    2333049.486599695
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
