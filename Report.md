@@ -7,7 +7,7 @@
 GC暂停时间，测试完成时间，GC吞吐率。
 
 
-## 二，编译JDK
+## 二. 编译JDK
 
 ```shell
 git clone https://github.com/Tencent/TencentKona-17 -b TencentKona-17.0.11
@@ -25,15 +25,18 @@ make images
 如需要修改编译参数，如关闭shenandoahgc，可以使用`bash configure --with-jvm-features=-shenandoahgc`等参数进行编译：
 ![关闭shenandoahgc](assets/buildJDK/CloseShenandoahGC.png)
 
-## 三. Benchmark
+## 三. Benchmark设计
 
 通过LinkedHashMap模拟LRU算法，通过JMH进行随机访问测试。
+> LRU Cache见[该链接](./src/main/java/org/second/LRUCache.java)
+> 
+> JMH测试见[该链接](./src/main/java/org/second/LRUBenckmark.java)
 
 部分设定：
 1. 4GB 与 100GB Heap Size
 2. 12个Thread(处理器为AMD EPYC 7Y43，开启超线程。即6个物理核心，在同一个CCD上)
 3. 60s warmup，60s 测试时间， 5 iterations
-4. 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8的liveDataFraction
+4. 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8的Live Data Fraction
 5. 测试Serial GC，Parallel Scavenge，G1GC，ZGC，Shenandoah GC
 
 例如：
@@ -535,3 +538,7 @@ Shenandoah 可以分为以下几个阶段：
 ![P999PauseTime](assets/stat/P999PauseTime.png)
 最后通过平均和P99.9的暂停时间来看，可以看到，ZGC、Shenandoah GC的暂停时间低于其他GC数个数量级，同时ZGC的暂停时间也相对于Shenandoah GC更低。
 
+## References
+1. Oaks, Scott. Java performance: in-depth advice for tuning and programming Java 8, 11, and beyond. O'Reilly Media, 2020.
+2. 周志明. 深入理解 Java 虚拟机: JVM 高级特性与最佳实践. 机械工业出版社, 2020.
+3. Aleksey Shipilёv, Shenandoah GC Part I: The Garbage Collector That Could, https://shipilev.net/talks/javazone-Sep2018-shenandoah.pdf, 2018
