@@ -247,14 +247,17 @@ numactl -C 0-11 -m 0  java -Xms4G -Xmx4G -XX:ActiveProcessorCount=12 -jar ../GCB
 ```
 
 该阶段主要分为以下几个部分：
+
 1. Concurrent Clear Claimed Marks：清除标记
 2. Concurrent Scan Root Regions：扫描根区域
 
 在根区域扫描完成后，开始并发标记，这完全是在后台线程中进行的，不会暂停应用程序。
+
 3. Concurrent Mark：并发标记
 4. Concurrent Preclean：并发预清理
 
 随后暂停应用程序，进行Remark和cleanup操作，不过暂停时间很短。
+
 5. Pause Remark：暂停标记
 6. Concurrent Rebuild Remembered Sets：重建Remembered Sets
 7. Pause Cleanup：暂停清理
@@ -504,7 +507,7 @@ Shenandoah 可以分为以下几个阶段：
 
 ## 五、Benchmark结果分析
 
-### 1。LRU吞吐量
+### 1. LRU吞吐量
 
 我们通过JMH测试了不同GC在不同 Live Data Fraction下的LRU吞吐量，结果如下：
 
