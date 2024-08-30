@@ -2,6 +2,7 @@ package org.second;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class LRUCache<Key, Value> {
     private final int size;
@@ -29,5 +30,12 @@ public class LRUCache<Key, Value> {
         return cache.size();
     }
 
+    public Set<Key> keySet() {
+        return cache.keySet();
+    }
+
+    public Set<Map.Entry<Key, Value>> entrySet() {
+        return cache.entrySet();
+    }
 
 }
