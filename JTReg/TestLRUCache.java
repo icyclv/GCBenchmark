@@ -49,7 +49,7 @@ class GCTest{
         private final LinkedHashMap<Key, Value> cache;
 
         public LRUCache(int size) {
-     
+
             this.cache = new LinkedHashMap<>(size*4/3, 0.75f, true) {
                 @Override
                 protected boolean removeEldestEntry(Map.Entry<Key, Value> eldest) {
@@ -83,7 +83,7 @@ class GCTest{
 
     public static void main(String[] args) {
         final int objectSize = 1024 * 4; // size of the object to store in the cache
-        final double hitRate = 0.9; // hit rate of the cache
+        final double hitRate = 0.95; // hit rate of the cache
         final int cacheSize = (int) (Runtime.getRuntime().maxMemory() * 0.6 / objectSize);
         final int statLRUSize = 1000;
         final int maxKey = (int) (cacheSize / hitRate);
@@ -101,20 +101,20 @@ class GCTest{
         BitSet curLRUKeysInOldGen = new BitSet(maxKey);
         BitSet keysInOldGen = new BitSet(maxKey);
 
-
-
         for (int i = 0; i < iteration; i++) {
             if (i % logInterval == 0) {
                 System.out.println("[INFO] Iteration: " + i);
 
-                long[] gcInfo = wb.g1GetMixedGCInfo(101);
+                long[] gcInfo = wb.g1GetOldStat(false);
                 double uptimeSec = (double) runtimeMxBean.getUptime() / 1000;
+                long regionCount = gcInfo[0];
                 double usedMemoryMB = (double) gcInfo[1] / 1024 / 1024;
-                double freeMemoryMB = (double) gcInfo[2] / 1024 / 1024;
+                double liveMemoryMB = (double) gcInfo[2] / 1024 / 1024;
+                long couldBeFreedRegionCount = gcInfo[3];
+                double freeMemoryMB = (double) gcInfo[4] / 1024 / 1024;
+                long regionSize = gcInfo[5];
 
                 int valueCount = (int)(gcInfo[1]/objectSize);
-                System.out.printf("[INFO] JVM Uptime: %.2f seconds, OldGen Region Count: %d, OldGen Used Memory: %.2f MB, Estimated memory to be freed: %.2f MB, Estimated OldGen object count: %d%n",
-                        uptimeSec, gcInfo[0], usedMemoryMB, freeMemoryMB, valueCount);
 
                 int index = 0;
                 for (Map.Entry<Integer, byte[]> entry : cache.entrySet()) {
@@ -128,10 +128,14 @@ class GCTest{
                     index++;
                 }
                 int cardinality = keysInOldGen.cardinality();
-                int gap = valueCount - cardinality;
-                System.out.printf("[INFO] Number of keys in OldGen: %d, Gap with estimated OldGen object: %d (%d MB) %n", cardinality, gap, gap*objectSize/1024/1024);
                 preLRUKeysInOldGen.and(keysInOldGen);
-                System.out.printf("[INFO] Number of pre top %d LRU keys still in the Cache and OldGen: %d %n ",statLRUSize, preLRUKeysInOldGen.cardinality());
+
+                int gap = valueCount - cardinality;
+                System.out.printf("[INFO] JVM Uptime: %.2f seconds, OldGen Region Count: %d, OldGen Used Memory: %.2f MB, OldGen Live Memory: %.2f MB, Total count of old regions to be freed %d, Estimated memory to be freed: %.2f MB, Estimated OldGen object count: %d%n" +
+                                "[INFO] Average Region used: %.2f %%, Live percent of used: %.2f %%, Live percent of region size: %.2f %% \n",
+                        uptimeSec, regionCount, usedMemoryMB,liveMemoryMB,couldBeFreedRegionCount, freeMemoryMB, valueCount,(double)gcInfo[1]/(regionSize*regionCount)*100, (double)gcInfo[2]/gcInfo[1]*100, (double)gcInfo[2]/(regionSize*regionCount)*100);
+                System.out.printf("[INFO] Number of keys in OldGen: %d, Gap with estimated OldGen object: %d (%d MB) %n", cardinality, gap, gap*objectSize/1024/1024);
+                System.out.println("[INFO] Number of pre-LRU keys in OldGen: " + preLRUKeysInOldGen.cardinality());
 
                 // Update and clear for the next iteration
                 preLRUKeysInOldGen.clear();
