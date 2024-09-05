@@ -183,8 +183,8 @@ WB_ENTRY(jboolean, WB_isObjectInOldGen(JNIEnv* env, jobject o, jobject obj))
 这里主要是通过获取对象所在的HeapRegion，然后判断该HeapRegion是否是young region。
 
 ## 三. 实现思路
-1.这里和任务一类似，我们需要实现一个LRU Cache，并设置Live Data Fraction等参数
-2.为了统计相关GC信息，这里我主要统计两个信息
+1. 这里和任务一类似，我们需要实现一个LRU Cache，并设置Live Data Fraction等参数
+2. 为了统计相关GC信息，这里我主要统计两个信息
 - g1GetMixedGCInfo提供的old region数量、大小、以及估计的可以被释放的内存。并根据value的大小，估计old region中的对象数量（不准确）。
 - 设置BitSet统计LRU Cache中在OldGen中KV，以及统计上一次统计时LRU中在队头（即即将被移除）的1000个KV在这次统计时是否仍在队内，以估计LRUCache对GC的压力（需要注意的是这里存在一些误差，因为只统计了Key，没统计Value的地址，所以如果一个Key被驱逐后，又重新生成了同一个Key，新的Value的KV对加入Cache，也会被认为是没有被驱逐的）。
 
@@ -198,7 +198,7 @@ WB_ENTRY(jboolean, WB_isObjectInOldGen(JNIEnv* env, jobject o, jobject obj))
 - hit rate 0.9
 - 另尝试了通过ProcessTools.createJavaProcessBuilder创建了新的测试进程，但目前仍没有在原进程上进行分析，而是直接手动分析日志。
 ## 四. 日志分析
-
+JTReg的日志见[该文件](log/jtreg/TestLRUCacheUpd.jtr)
 ### Young GC
 以第8个GC日志为例：
 ```
