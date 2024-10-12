@@ -191,9 +191,17 @@ void G1AdaptMixedGCControl::update_allocation_info(long used_after_gc) {
 |Default| 11208    | 3119          |
 
 效果如下图所示：
+
+
 ![AdaptMixedGC](assets/stat/Task3-AdaptSPECjbbReport.png)
+
+
 上图为AdaptMixedGC的测试结果
+
+
 ![Default](assets/stat/Task3-DefaultSPECjbbReport.png)
+
+
 上图为Default的测试结果
 
 可以发现，在SPECjbb2015中，AdaptMixedGC相对于Default有一定的性能提升，其中max-jOPS提升了2.4%，critical-JOPS提升了11.5%。
